@@ -64,9 +64,6 @@ const students = [
     },
 
 ];
-function getCre() {
-    return 0
-}
 
 const rateCredit = {
     'A': 12,
