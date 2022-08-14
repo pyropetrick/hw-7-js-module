@@ -124,3 +124,14 @@ console.log(isIsogram(word))
 
 // task 6
 
+let inputWord = 'ABC';
+
+function convertASCII(str) {
+    let reSeven = /[7]/g
+    let total1 = str.split('').map(word => word.charCodeAt()).join('');
+    let total2 = +total1.replace(reSeven, '1');
+    let total = total1 - total2;
+    console.log(total)
+}
+convertASCII(inputWord)
+
