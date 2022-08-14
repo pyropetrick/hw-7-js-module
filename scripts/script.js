@@ -127,7 +127,7 @@ console.log(isIsogram(word))
 let inputWord = 'ABC';
 
 function convertASCII(str) {
-    let reSeven = /[7]/g
+    let reSeven = /7/g
     let total1 = str.split('').map(word => word.charCodeAt()).join('');
     let total2 = +total1.replace(reSeven, '1');
     let total = total1 - total2;
@@ -135,3 +135,22 @@ function convertASCII(str) {
 }
 convertASCII(inputWord)
 
+// task 7
+
+let inputWord1 = 'Success';
+
+function duplicate (str) {
+    let repeatWord = str.toLowerCase().split``.filter((h => v => (h[v] = (h[v] || 0) + 1) === 2)({}));
+    let noRepeatChar = '(';
+    let repeatChar = ')';
+    console.log(repeatWord)
+    let arr = str.toLowerCase().split('').map(word => {
+        for (let i = 0; i < repeatWord.length; i++) {
+            if (word === repeatWord[i]) return repeatChar
+        }
+        return noRepeatChar
+    }).join('')
+    console.log(arr);
+}
+
+duplicate(inputWord1)
